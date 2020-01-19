@@ -2,6 +2,7 @@
 
 namespace Orh\LaravelGiteeWebhooks;
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 use Orh\LaravelGiteeWebhooks\Http\Middleware\Verify;
 
