@@ -6,7 +6,11 @@ class GiteeWebhooksController extends Controller
 {
     public function push()
     {
-        @exec(config('gitee-webhooks.push_command'));
+        $path = base_path();
+
+        $command = config('gitee-webhooks.push_command');
+
+        @exec("cd {$path} && $command");
 
         return response()->json('Success.');
     }
