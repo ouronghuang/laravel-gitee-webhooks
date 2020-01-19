@@ -1,0 +1,41 @@
+{
+    "name": "orh/laravel-gitee-webhooks",
+    "description": "Laravel gitee webhooks",
+    "keywords": [
+        "Laravel",
+        "PHP",
+        "Gitee",
+        "Webhooks",
+        "Gitee webhooks",
+        "Laravel gitee webhooks"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "欧荣凰",
+            "email": "512574561@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "~2.16.0"
+    },
+    "scripts": {
+        "phpcs": "vendor/bin/php-cs-fixer fix"
+    },
+    "autoload": {
+        "psr-4": {
+            "Orh\\LaravelGiteeWebhooks\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Orh\\LaravelGiteeWebhooks\\ServiceProvider"
+            ]
+        }
+    }
+}
