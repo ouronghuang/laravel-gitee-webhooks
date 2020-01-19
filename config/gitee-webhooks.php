@@ -39,5 +39,5 @@ return [
     | 请自行编写
     |
     */
-    'push_command' => env('GITEE_WEBHOOKS_COMMAND'),
+    'push_command' => env('GITEE_WEBHOOKS_PUSH_COMMAND'),
 ];
